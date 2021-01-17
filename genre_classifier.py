@@ -162,13 +162,17 @@ if __name__ == "__main__":
     print('\nTest accuracy:', test_acc)
 
     # predict sample
-    predict(model, X_test[100], y_test[100])
-    predict(model, X_test[23], y_test[23])
-    predict(model, X_test[54], y_test[54])
-    predict(model, X_test[76], y_test[76])
-    predict(model, X_test[1], y_test[1])
-    predict(model, X_test[43], y_test[43])
-    predict(model, X_test[79], y_test[79])
-    predict(model, X_test[12], y_test[12])
-    predict(model, X_test[87], y_test[87])
-    predict(model, X_test[900], y_test[900])
+    # predict(model, X_test[100], y_test[100])
+    # predict(model, X_test[23], y_test[23])
+    # predict(model, X_test[54], y_test[54])
+    # predict(model, X_test[76], y_test[76])
+    # predict(model, X_test[1], y_test[1])
+    # predict(model, X_test[43], y_test[43])
+    # predict(model, X_test[79], y_test[79])
+    # predict(model, X_test[12], y_test[12])
+    # predict(model, X_test[87], y_test[87])
+    # predict(model, X_test[900], y_test[900])
+
+    # save model and architecture to single file
+    model.save("model.h5")
+    print("Saved model to disk")

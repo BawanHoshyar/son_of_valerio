@@ -46,7 +46,7 @@ def save_mfcc(dataset_path, json_path, n_mfcc=13, n_fft=2048, hop_length=512, nu
                     start_sample = num_samples_per_segment * s  # s=0 -> 0
                     finish_sample = start_sample + num_samples_per_segment  # s=0 -> num_samples_per_segment
 
-                    mfcc = librosa.feature.mfcc(signal[start_sample:finish_sample],
+                    mfcc = librosa.feature.mfcc(signal[start_sample: ],
                                                 sr=sr,
                                                 n_fft=n_fft,
                                                 n_mfcc=n_mfcc,
